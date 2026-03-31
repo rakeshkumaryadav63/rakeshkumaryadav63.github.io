@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rakesh Kumar Yadav — ML Engineer & Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Boxicons for social/skill icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body data-theme="dark">
+
+  <!-- ═══════════════════ CURSOR ═══════════════════ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ═══════════════════ NAVBAR ═══════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-dot"></span>RKY
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#certifications" class="nav-link">Certs</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <i class='bx bx-sun' id="themeIcon"></i>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-noise"></div>
+    <div class="hero-grid-bg"></div>
+
+    <!-- Floating orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-content">
+      <p class="hero-label fade-up">👋 Hey, I'm</p>
+      <h1 class="hero-name fade-up">
+        Rakesh<br /><em>Kumar Yadav</em>
+      </h1>
+      <div class="hero-typewriter fade-up">
+        <span class="type-prefix">I build </span>
+        <span class="typed" id="typed"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc fade-up">
+        A passionate Computer Science student at LPU specializing in Machine Learning, Data Analysis,
+        and full-stack development — crafting intelligent systems that solve real-world problems.
+      </p>
+      <div class="hero-cta fade-up">
+        <a href="#projects" class="btn btn-primary">View Projects <i class='bx bx-arrow-back bx-rotate-180'></i></a>
+        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+      </div>
+      <div class="hero-stats fade-up">
+        <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">6+</span><span class="stat-label">Certifications</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">97.5%</span><span class="stat-label">ML Accuracy</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual fade-up">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <img src="propic.jpeg" alt="Rakesh Kumar Yadav" class="profile-pic" />
+        </div>
+        <svg class="ring-svg" viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="90" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="8 6" />
+        </svg>
+        <div class="floating-badge badge-1"><i class='bx bxl-python'></i> Python</div>
+        <div class="floating-badge badge-2"><i class='bx bx-brain'></i> ML</div>
+        <div class="floating-badge badge-3"><i class='bx bxl-django'></i> Django</div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <div class="scroll-line"></div>
+    </a>
+  </section>
+
+  <!-- ═══════════════════ ABOUT ═══════════════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label reveal">About Me</div>
+      <h2 class="section-title reveal">Turning Data Into <em>Decisions</em></h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="about-lead">
+            I'm a third-year B.Tech CSE student at Lovely Professional University with a deep interest
+            in building intelligent, data-driven applications that make a measurable impact.
+          </p>
+          <p>
+            My journey spans machine learning, data visualization, and web development — from training
+            Random Forest models with 97.5% accuracy to crafting interactive dashboards that reveal
+            hidden patterns in large datasets. I believe in learning by building, and every project
+            I take on pushes me to grow.
+          </p>
+          <p>
+            Outside of academics, I'm actively sharpening my DSA skills on LeetCode, earning
+            industry-recognized certifications, and building towards a full-stack career in
+            AI-powered applications.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class='bx bx-map-pin'></i>
+              <span>Banglore, Karnataka · India</span>
+            </div>
+            <div class="highlight-item">
+              <i class='bx bx-graduation'></i>
+              <span>B.Tech CSE · LPU (2027)</span>
+            </div>
+            <div class="highlight-item">
+              <i class='bx bx-target-lock'></i>
+              <span>Open to Internships & Roles</span>
+            </div>
+          </div>
+          <a href="cv_main.pdf" download class="btn btn-primary" style="width:fit-content;margin-top:1.5rem;">
+            Download CV <i class='bx bx-download'></i>
+          </a>
+        </div>
+
+        <div class="about-cards reveal">
+          <div class="about-card">
+            <div class="about-card-icon"><i class='bx bx-brain'></i></div>
+            <h4>Machine Learning</h4>
+            <p>Building and deploying ML models using Scikit-learn, Pandas, and NumPy with measurable business impact.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon"><i class='bx bx-bar-chart-alt-2'></i></div>
+            <h4>Data Analysis</h4>
+            <p>Extracting actionable insights from complex datasets using Python, Excel, and Power BI dashboards.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon"><i class='bx bx-code-alt'></i></div>
+            <h4>Web Development</h4>
+            <p>Creating responsive and dynamic web apps with HTML, CSS, JavaScript, and Django backend.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon"><i class='bx bxl-aws'></i></div>
+            <h4>Cloud & AI</h4>
+            <p>AWS ML Specialty certified with hands-on experience in OCI Generative AI and no-code AI platforms.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PROJECTS ═══════════════════ -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-label reveal">Work</div>
+      <h2 class="section-title reveal">Featured <em>Projects</em></h2>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal">
+          <div class="project-num">01</div>
+          <div class="project-meta">
+            <span class="project-tag">Machine Learning</span>
+            <span class="project-tag">Python</span>
+          </div>
+          <h3 class="project-title">Expense Tracker &amp; Analyzer</h3>
+          <p class="project-desc">
+            A Python-powered ML system that classifies and analyzes personal expenses using a
+            Random Forest model — achieving an impressive 97.5% accuracy. The system provides
+            actionable budgeting insights and uncovers key financial behavior patterns.
+          </p>
+          <div class="project-stack">
+            <span>Python</span><span>Pandas</span><span>NumPy</span>
+            <span>Scikit-learn</span><span>Matplotlib</span><span>Seaborn</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/rakeshkumaryadav63/Rakesh" target="_blank" class="project-link">
+              <i class='bx bxl-github'></i> GitHub
+            </a>
+            <a href="#" class="project-link project-link-live">
+              <i class='bx bx-link-external'></i> Live Demo
+            </a>
+          </div>
+          <div class="project-glow"></div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal">
+          <div class="project-num">02</div>
+          <div class="project-meta">
+            <span class="project-tag">Data Visualization</span>
+            <span class="project-tag">Excel</span>
+          </div>
+          <h3 class="project-title">Marriage Trends in India — Dashboard</h3>
+          <p class="project-desc">
+            An interactive data dashboard built with Microsoft Excel and PivotTables that
+            visualizes marriage and divorce trends across India. Reveals urban-rural divides,
+            regional patterns, and generational shifts through large-scale data cleaning and analysis.
+          </p>
+          <div class="project-stack">
+            <span>Microsoft Excel</span><span>PivotTables</span><span>Data Cleaning</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/rakeshkumaryadav63/Marriage-trends-and-divorce-in-India" target="_blank" class="project-link">
+              <i class='bx bxl-github'></i> GitHub
+            </a>
+            <a href="#" class="project-link project-link-live">
+              <i class='bx bx-link-external'></i> Live Demo
+            </a>
+          </div>
+          <div class="project-glow"></div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal">
+          <div class="project-num">03</div>
+          <div class="project-meta">
+            <span class="project-tag">Web Development</span>
+            <span class="project-tag">Frontend</span>
+          </div>
+          <h3 class="project-title">Medico — Medical Scheduling Platform</h3>
+          <p class="project-desc">
+            A fully responsive web application that streamlines doctor appointment booking.
+            Features dynamic form validation, a polished mobile-first UI, and an intuitive UX
+            that simplifies the healthcare scheduling experience for patients and providers.
+          </p>
+          <div class="project-stack">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">
+              <i class='bx bxl-github'></i> GitHub
+            </a>
+            <a href="#" class="project-link project-link-live">
+              <i class='bx bx-link-external'></i> Live Demo
+            </a>
+          </div>
+          <div class="project-glow"></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ SKILLS ═══════════════════ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-label reveal">Expertise</div>
+      <h2 class="section-title reveal">Technical <em>Skills</em></h2>
+
+      <div class="skills-layout">
+
+        <!-- Skill Categories -->
+        <div class="skills-categories reveal">
+          <div class="skill-cat">
+            <div class="skill-cat-header">
+              <i class='bx bx-code-curly'></i>
+              <h4>Languages</h4>
+            </div>
+            <div class="skill-pills">
+              <div class="skill-pill"><i class='bx bxl-python'></i> Python</div>
+              <div class="skill-pill"><i class='bx bxl-java'></i> Java</div>
+              <div class="skill-pill"> C++</div>
+              <div class="skill-pill"> C</div>
+            </div>
+          </div>
+
+          <div class="skill-cat">
+            <div class="skill-cat-header">
+              <i class='bx bx-layout'></i>
+              <h4>Frontend</h4>
+            </div>
+            <div class="skill-pills">
+              <div class="skill-pill"><i class='bx bxl-html5'></i> HTML5</div>
+              <div class="skill-pill"><i class='bx bxl-css3'></i> CSS3</div>
+              <div class="skill-pill"><i class='bx bxl-javascript'></i> JavaScript</div>
+            </div>
+          </div>
+
+          <div class="skill-cat">
+            <div class="skill-cat-header">
+              <i class='bx bx-server'></i>
+              <h4>Backend & DB</h4>
+            </div>
+            <div class="skill-pills">
+              <div class="skill-pill"><i class='bx bxl-django'></i> Django</div>
+              <div class="skill-pill"> MySQL</div>
+            </div>
+          </div>
+
+          <div class="skill-cat">
+            <div class="skill-cat-header">
+              <i class='bx bx-cube'></i>
+              <h4>ML & Data</h4>
+            </div>
+            <div class="skill-pills">
+              <div class="skill-pill"> NumPy</div>
+              <div class="skill-pill"> Pandas</div>
+              <div class="skill-pill"> Matplotlib</div>
+              <div class="skill-pill"> Scikit-learn</div>
+              <div class="skill-pill"> Seaborn</div>
+            </div>
+          </div>
+
+          <div class="skill-cat">
+            <div class="skill-cat-header">
+              <i class='bx bx-wrench'></i>
+              <h4>Tools & Platforms</h4>
+            </div>
+            <div class="skill-pills">
+              <div class="skill-pill"><i class='bx bxl-aws'></i> AWS</div>
+              <div class="skill-pill"> Power BI</div>
+              <div class="skill-pill"> Excel</div>
+              <div class="skill-pill"><i class='bx bxl-git'></i> Git</div>
+              <div class="skill-pill"> VS Code</div>
+              <div class="skill-pill"> Linux</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proficiency Bars -->
+        <div class="skills-bars reveal">
+          <h4 class="bars-title">Proficiency</h4>
+          <div class="bar-item">
+            <div class="bar-info"><span>Python</span><span>90%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-info"><span>Machine Learning</span><span>82%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="82"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-info"><span>Data Analysis</span><span>85%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-info"><span>Web Development</span><span>75%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-info"><span>Java / C++</span><span>70%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="70"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-info"><span>Django</span><span>65%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="65"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CERTIFICATIONS ═══════════════════ -->
+  <section class="section section-alt" id="certifications">
+    <div class="container">
+      <div class="section-label reveal">Credentials</div>
+      <h2 class="section-title reveal">Certifications &amp; <em>Achievements</em></h2>
+
+      <div class="certs-grid">
+        <div class="cert-card reveal">
+          <div class="cert-badge cert-aws"><i class='bx bxl-aws'></i></div>
+          <div class="cert-body">
+            <h4>AWS Machine Learning Specialty</h4>
+            <p>Amazon Web Services</p>
+            <span class="cert-date">November 2025</span>
+            <button class="btn btn-outline btn-sm view-cert-btn" data-cert="1.pdf">View Certificate</button>
+          </div>
+          <div class="cert-verified"><i class='bx bx-check-shield'></i></div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge cert-oracle"><i class='bx bx-cloud'></i></div>
+          <div class="cert-body">
+            <h4>OCI Generative AI — Certified Professional</h4>
+            <p>Oracle</p>
+            <span class="cert-date">October 2025</span>
+            <button class="btn btn-outline btn-sm view-cert-btn" data-cert="2.pdf">View Certificate</button>
+          </div>
+          <div class="cert-verified"><i class='bx bx-check-shield'></i></div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge cert-oracle"><i class='bx bx-cloud-upload'></i></div>
+          <div class="cert-body">
+            <h4>OCI Foundations Associate</h4>
+            <p>Oracle</p>
+            <span class="cert-date">October 2025</span>
+            <button class="btn btn-outline btn-sm view-cert-btn" data-cert="3.pdf">View Certificate</button>
+          </div>
+          <div class="cert-verified"><i class='bx bx-check-shield'></i></div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge cert-infosys"><i class='bx bx-bot'></i></div>
+          <div class="cert-body">
+            <h4>Build Generative AI Apps with No-Code Tools</h4>
+            <p>Infosys</p>
+            <span class="cert-date">August 2025</span>
+            <button class="btn btn-outline btn-sm view-cert-btn" data-cert="4.pdf">View Certificate</button>
+          </div>
+          <div class="cert-verified"><i class='bx bx-check-shield'></i></div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge cert-coursera"><i class='bx bx-network-chart'></i></div>
+          <div class="cert-body">
+            <h4>Networking Models &amp; Computer Architecture</h4>
+            <p>Coursera</p>
+            <span class="cert-date">November 2024</span>
+            <button class="btn btn-outline btn-sm view-cert-btn" data-cert="5.pdf">View Certificate</button>
+          </div>
+          <div class="cert-verified"><i class='bx bx-check-shield'></i></div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge cert-infosys"><i class='bx bxl-python'></i></div>
+          <div class="cert-body">
+            <h4>Introduction to Python</h4>
+            <p>Infosys</p>
+            <span class="cert-date">February 2024</span>
+            <button class="btn btn-outline btn-sm view-cert-btn" data-cert="6.jpg">View Certificate</button>
+          </div>
+          <div class="cert-verified"><i class='bx bx-check-shield'></i></div>
+        </div>
+      </div>
+
+      <!-- Achievements -->
+      <div class="achievements-row reveal">
+        <div class="achievement-item">
+          <div class="ach-icon"><i class='bx bx-trophy'></i></div>
+          <div>
+            <h5>College-Level Hackathon</h5>
+            <p>Collaborated in a team to design and develop a problem-solving solution under time constraints, gaining hands-on experience in real-world development.</p>
+          </div>
+        </div>
+        <div class="achievement-item">
+          <div class="ach-icon"><i class='bx bx-medal'></i></div>
+          <div>
+            <h5>LeetCode — Introduction to Pandas Badge</h5>
+            <p>Earned the Pandas badge by solving data manipulation and analysis problems using the Python Pandas library on LeetCode.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CONTACT ═══════════════════ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-label reveal">Get In Touch</div>
+      <h2 class="section-title reveal">Let's <em>Connect</em></h2>
+
+      <div class="contact-layout">
+        <div class="contact-info reveal">
+          <p class="contact-intro">
+            I'm currently open to internship opportunities, collaborative projects, and interesting conversations
+            about ML, data, and development. My inbox is always open!
+          </p>
+          <div class="contact-links">
+            <a href="mailto:rakeshkyadav572@gmail.com" class="contact-item">
+              <div class="contact-icon"><i class='bx bx-envelope'></i></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">rakeshkyadav572@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/rakeshyadav63" target="_blank" class="contact-item">
+              <div class="contact-icon"><i class='bx bxl-linkedin'></i></div>
+              <div>
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">linkedin.com/in/rakeshyadav63</span>
+              </div>
+            </a>
+            <a href="https://github.com/rakeshkumaryadav63" target="_blank" class="contact-item">
+              <div class="contact-icon"><i class='bx bxl-github'></i></div>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/rakeshkumaryadav63</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Internship Opportunity / Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Send Message <i class='bx bx-send'></i>
+          </button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-dot"></span>RKY
+      </div>
+      <p class="footer-copy">
+        Designed &amp; built by <strong>Rakesh Kumar Yadav</strong> · © 2025. All rights reserved.
+      </p>
+      <div class="footer-socials">
+        <a href="https://github.com/rakeshkumaryadav63" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/rakeshyadav63" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+        <a href="mailto:rakeshkyadav572@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════ CERTIFICATE MODAL ═══════════════════ -->
+  <div class="modal" id="certModal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModal">&times;</span>
+      <img src="" alt="Certificate" id="modalImg" class="modal-img" />
+      <iframe src="" id="modalPdf" class="modal-pdf"></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
